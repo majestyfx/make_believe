@@ -1,0 +1,107 @@
+:root{
+    --bg-color:rgb(214, 235, 243) ;
+    --second-bg-color: rgb(12, 110, 221);
+    --text-color:#01060c;
+    --style-color:#fcfcfc;
+    --second-color: rgb(228, 104, 21);
+    --main-color: rgb(160, 143, 143);
+    --other-color: #1ca30a;
+    --final-color:#f1da07 ;
+    --big-font: 5.7rem;
+    --h2-fonts: 3.8rem;
+    --h3-fonts: 3.0rem;
+    --h4-fonts: 2.0rem;
+    --p-font: 1.53rem;
+}
+.hood{
+background-color: var(--bg-color);
+justify-content: center;
+align-items: center;
+}
+.img{
+    display: flex;
+    padding: 0px 10px;
+    padding-top: 0px;
+}
+.exmp{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 50px;
+}
+.begin{
+    justify-content: right;
+    background-color: var(--bg-color);
+    height: 50px;
+}
+.navlist{
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    list-style-type: none;
+}
+.navlist li{
+    position: relative;
+}
+.navlist a{
+    color :var(--second-bg-color);
+    font-weight : 500;
+    font-size : 1rem;
+    padding : 10px;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    background: var(--second-bg-color);
+    height: 4px;
+    bottom: -10px;
+    left: 0%;
+    transition: ease .40s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+.h-btn{
+    margin: none;
+}
+.h-btn b{
+    color: var(--second-bg-color);
+    font-weight : 500;
+    padding: 8px 26px;
+    border: 1px solid transparent;
+    transition: ease .40s;
+}
+.h-btn a{
+    color: var(--second-bg-color);
+    font-weight : 500;
+    padding: 6.5px 30px;
+    border: 1px solid ;
+    transition: ease .40s;
+}
+.h-btn .login{
+    color: var(--second-bg-color);
+    background-color: transparent;
+    border-radius: 7px;
+    margin-left: 10px;
+    }
+.h-btn .login:hover{
+  background:#5f13d8 ;
+  border: 1px solid var(--second-bg-color);
+  color:var(--style-color);
+}
+.h-btn .register{
+    color: white;
+    background-color:var(--second-bg-color);
+    border-radius: 7px;
+    margin-right: 15px;
+    }
+.h-btn .register:hover{
+  background: transparent;
+  border: 4px solid var(--second-bg-color);
+  color: var(--second-bg-color);
+}
+
+
